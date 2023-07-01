@@ -1,0 +1,34 @@
+{
+  "name": "ravinia",
+  "version": "1.0.0",
+  "description": "A project that allows the user to manage his course",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "author": "Marwan Albkirat",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "@joi/date": "^2.1.0",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.37.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^7.0.0",
+    "hpp": "^0.2.3",
+    "joi": "^17.9.2",
+    "joi-password-complexity": "^5.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.4",
+    "multer": "^1.4.5-lts.1",
+    "node-schedule": "^2.1.1",
+    "nodemailer": "^6.9.3",
+    "xss-clean": "^0.1.4"
+  }
+}

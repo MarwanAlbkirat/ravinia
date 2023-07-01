@@ -1,0 +1,10 @@
+const Router = require("express").Router();
+const questionController = require("../Controllers/QuestionController");
+const verfyToken = require("../Middlewares/verfyToken");
+const checkId = require("../Middlewares/CheckId");
+Router.post   ("/:id",verfyToken,questionController.createQuestion );
+Router.get    ("/:id"                , checkId , verfyToken , questionController.getExamQuestion    );
+// Router.put    ("/:id"                , checkId , verfyToken , examController.updateExam );
+Router.delete ("/:id"                , checkId , verfyToken , questionController.deleteQuestion );
+// Router.get    ("/get-all-course/:id" , checkId , verfyToken , examController.getAllExam );
+module.exports = Router;
